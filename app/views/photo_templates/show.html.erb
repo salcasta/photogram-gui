@@ -60,3 +60,16 @@
 </table>
 
 <h3>Add a new comment</h3>
+
+  <form action="/insert_comment/<%= @the_photo.id %>" method="post">
+    <label for="photo_id">Photo ID</label>
+    <input type="text" id="photo_id" name="query_photo_id" placeholder="" value="<%= @the_photo.id%>">
+
+    <label for="author_id">Author ID</label>
+    <input type="text" id="author_id" name="query_author_id" placeholder="Enter your author ID" value="">
+
+    <label for="comment">Comment</label>
+    <input type="text" id="comment" name="query_comment" placeholder="Enter a comment..." value="">
+
+    <button>Add a comment</button>
+  </form>
