@@ -31,7 +31,7 @@ class UsersController < ApplicationController
 
     ## render({ :template => "user_templates/create_user" })
 
-    redirect_to("/users")
+    redirect_to("/users/#{a_new_user.username}")
   end
 
   def update
