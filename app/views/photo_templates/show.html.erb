@@ -22,7 +22,7 @@
       <input type="text" id="browser_image" name="query_image" placeholder="Enter a URL for the image..." value="<%= @the_photo.image %>">
 
       <label for="browser_caption">Caption</label>
-      <input type="text" id="browser_caption" name="query_caption" placeholder="Enter a caption for the photo..." value="<%= @the_photo.caption %>">
+      <textarea id="browser_caption" name="query_caption" placeholder="Enter a caption for the photo..." value="<%= @the_photo.caption %>"></textarea>
 
       <button>Update photo</button>
     </form>
@@ -69,7 +69,7 @@
     <input type="text" id="author_id" name="query_author_id" placeholder="Enter your author ID" value="">
 
     <label for="comment">Comment</label>
-    <input type="text" id="comment" name="query_comment" placeholder="Enter a comment..." value="">
+    <textarea id="comment" name="query_comment" placeholder="Enter a comment..." value=""></textarea>
 
     <button>Add a comment</button>
   </form>

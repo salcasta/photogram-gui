@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   get("/users/:path_username", { :controller => "users", :action => "show" })
 
+  post("/create_user", { :controller => "users", :action => "create_user"})
+
+  post("/update_username/:modify_id", { :controller => "users", :action => "update" })
+
 
   get("/photos", { :controller => "photos", :action => "index" })
 
@@ -17,5 +21,4 @@ Rails.application.routes.draw do
 
   post("/insert_comment/:path_id", :controller => "photos", :action => "insert_comment")
 
-  post("/create_user", { :controller => "users", :action => "create_user"})
 end
